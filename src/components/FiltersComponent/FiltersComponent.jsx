@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 
 export default function FiltersComponent() {
   return (
@@ -22,6 +23,8 @@ export default function FiltersComponent() {
       <label htmlFor="fullyInt">Fully Integrated</label>
       <input type="radio" name="type" id="alcove" value="alcove" />
       <label htmlFor="Bathroom">Alcove</label>
+
+      <button type="submit">Search</button>
     </form>
   );
 }
