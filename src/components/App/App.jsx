@@ -1,6 +1,11 @@
+import AppRoutes from "../AppRoutes/AppRoutes";
+import Navigation from "./Navigation/Navigation";
 
 export default function App() {
   return (
-    <div>This is page for truck rental</div>
+    <div>
+    <Navigation/>
+    <AppRoutes/>
+    </div>
   )
 }
