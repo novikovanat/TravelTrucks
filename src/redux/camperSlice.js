@@ -19,6 +19,7 @@ const camperSlice = createSlice({
       .addCase(fetchAllCampers.pending, setPending)
       .addCase(fetchAllCampers.fulfilled, (state, action) => {
         state.campers = action.payload;
+        state.isLoading =false;
       })
       .addCase(fetchAllCampers.rejected, setRejected);
   },

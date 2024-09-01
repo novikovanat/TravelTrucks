@@ -8,5 +8,5 @@ export default function AllCampersPage() {
     dispatch(fetchAllCampers());
   },[dispatch]);
 
-  return <h1>AllCampersPage</h1>;
+  return <div></div>
 }
