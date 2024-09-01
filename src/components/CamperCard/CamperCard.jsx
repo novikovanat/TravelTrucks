@@ -21,13 +21,3 @@ export default function CamperCard({ camper }) {
     </div>
   );
 }
-
-// "AC": true,
-// "bathroom": false,
-// "kitchen": true,
-// "TV": false,
-// "radio": true,
-// "refrigerator": false,
-// "microwave": false,
-// "gas": false,
-// "water": true,
