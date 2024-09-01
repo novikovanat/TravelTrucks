@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 
 export default function AllCampersPage() {
-  return (
-    <h1>AllCampersPage</h1>
-  )
+  useEffect(() => {
+    
+  });
+  return <h1>AllCampersPage</h1>;
 }
