@@ -3,7 +3,7 @@ import Feature from "../Feature/Feature";
 
 export default function CamperCard({ camper }) {
     const camperFeatures = Object.entries(camper).filter((entry)=> entry.includes(true))
-    const featureList = camperFeatures.map((entry, index)=>{ return (<li key={index}> <Feature name ={entry[0]}/></li>)} );
+    const featureList = camperFeatures.map((entry, index)=><li key={index}> <Feature name ={entry[0]}/></li>);
   return (
     <div>
       <img></img>
