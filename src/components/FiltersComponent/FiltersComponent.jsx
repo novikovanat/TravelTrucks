@@ -1,8 +1,16 @@
-import Button from "../Button/Button";
-
 export default function FiltersComponent() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    console.log(form);
+    form.reset();
+  };
+  const handleChange = (event) => {
+    console.log(event.target.value);
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit} onChange={handleChange}>
       <label htmlFor="location">Location</label>
       <input type="text" id="location" name="location" />
 
@@ -18,13 +26,15 @@ export default function FiltersComponent() {
       <label htmlFor="Bathroom">Bathroom</label>
 
       <input type="radio" name="type" id="van" value="van" />
-      <label htmlFor="Bathroom">Van</label>
+      <label htmlFor="van">Van</label>
       <input type="radio" name="type" id="fullyInt" value="fullyInt" />
       <label htmlFor="fullyInt">Fully Integrated</label>
       <input type="radio" name="type" id="alcove" value="alcove" />
-      <label htmlFor="Bathroom">Alcove</label>
+      <label htmlFor="alcove">Alcove</label>
 
-      <button type="submit">Search</button>
+      <button type="submit" value="submit">
+        Search
+      </button>
     </form>
   );
 }
